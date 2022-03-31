@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ideas"
+    app:startDestination="@id/ideasFragment">
+
+    <fragment
+        android:id="@+id/ideasFragment"
+        android:name="com.github.bgrebennikov.jetpacknavigationexample.ui.main.ideas.IdeasFragment"
+        android:label="fragment_ideas"
+        tools:layout="@layout/fragment_ideas" >
+        <action
+            android:id="@+id/action_ideasFragment_to_ideaInfoFragment"
+            app:destination="@id/ideaInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ideaInfoFragment"
+        android:name="com.github.bgrebennikov.jetpacknavigationexample.ui.main.ideas.IdeaInfoFragment"
+        android:label="fragment_idea_info"
+        tools:layout="@layout/fragment_idea_info" />
+</navigation>
